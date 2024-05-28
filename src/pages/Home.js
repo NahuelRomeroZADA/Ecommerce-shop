@@ -3,6 +3,8 @@ import React, {useContext} from 'react';
 import { ProductContext } from '../contexts/ProductContext';
 //import components
 import Product from '../components/Product'
+//import hero
+import Hero from '../components/Hero';
 
 const Home = () => {
   //get products from product context
@@ -17,6 +19,7 @@ const filteredProducts = products.filter((item) => {
 
   return ( 
   <div>
+    <Hero />
     <section className='py-16'>
       <div className='container mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-2 
